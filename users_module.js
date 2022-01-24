@@ -22,15 +22,15 @@ const express = require("express");
 const app = express();
 const router = express.Router();
 
-router.get("/:id", async (req, res) => {
-  /** getting user email */
-  console.log(req.params.id);
-  let data = await user.find({ _id: req.params.id });
-  console.log(data);
+// router.get("/:id", async (req, res) => {
+//   /** getting user email */
+//   console.log(req.params.id);
+//   let data = await user.find({ _id: req.params.id });
+//   console.log(data);
 
-  // res.send(req.params);
-  res.send(data);
-});
+//   // res.send(req.params);
+//   res.send(data);
+// });
 
 router
   .route("/")
